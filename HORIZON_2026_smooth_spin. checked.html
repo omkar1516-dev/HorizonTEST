@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="HORIZON 2026 — College Management Fest. Events, games, gallery, brochure, registration and highlights.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZON 2026 | Mega Management & Leadership Summit</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome 6 CDN for Brand & UI Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        /* HORIZON 2026 — Environmental Sustainability palette */
+                        navy: {
+                            950: '#F7F6E8',
+                            900: '#EEF5E9',
+                            800: '#DDEBDF',
+                            700: '#C7DCCE'
+                        },
+                        gold: {
+                            400: '#8BCF32',
+                            500: '#4FAF45',
+                            600: '#16865C'
+                        },
+                        cyan: {
+                            400: '#35B8C7',
+                            500: '#159A9C'
+                        },
+                        purple: {
+                            500: '#8A6CC9',
+                            600: '#7656B5'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Montserrat', 'Inter', 'sans-serif'],
+                        orbitron: ['Montserrat', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* =========================================================
+           HORIZON 2026 — ENVIRONMENTAL SUSTAINABILITY THEME
+           Inspired by the supplied brochure:
+           ivory + forest green + teal + lime + colorful eco accents
+           ========================================================= */
+
+        :root {
+            --eco-forest: #0B4F3F;
+            --eco-deep: #075E4A;
+            --eco-green: #16865C;
+            --eco-leaf: #4FAF45;
+            --eco-lime: #8BCF32;
+            --eco-teal: #159A9C;
+            --eco-cyan: #35B8C7;
+            --eco-sky: #65C7D9;
+            --eco-cream: #F7F6E8;
+            --eco-white: #FFFDF3;
+            --eco-yellow: #F4C52E;
+            --eco-orange: #F39A32;
+            --eco-coral: #F06B65;
+            --eco-purple: #8A6CC9;
+            --eco-text: #123F38;
+            --eco-muted: #5C776F;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 7% 12%, rgba(139, 207, 50, .14), transparent 22%),
+                radial-gradient(circle at 92% 20%, rgba(53, 184, 199, .13), transparent 24%),
+                radial-gradient(circle at 50% 100%, rgba(22, 134, 92, .10), transparent 30%),
+                var(--eco-cream);
+            color: var(--eco-text);
+        }
+
+        /* Soft botanical/wave atmosphere */
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            pointer-events: none;
+            z-index: -1;
+            border-radius: 999px;
+            filter: blur(1px);
+            opacity: .55;
+        }
+
+        body::before {
+            width: 360px;
+            height: 150px;
+            left: -140px;
+            top: 170px;
+            transform: rotate(-24deg);
+            background: linear-gradient(90deg, rgba(101, 199, 217, .18), rgba(139, 207, 50, .10));
+        }
+
+        body::after {
+            width: 420px;
+            height: 160px;
+            right: -170px;
+            bottom: 120px;
+            transform: rotate(20deg);
+            background: linear-gradient(90deg, rgba(139, 207, 50, .12), rgba(53, 184, 199, .18));
+        }
+
+        .font-serif-title,
+        .font-orbitron {
+            font-family: 'Montserrat', 'Inter', sans-serif;
+            letter-spacing: .01em;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #0B4F3F 0%, #159A9C 48%, #8BCF32 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cyan-glow {
+            box-shadow: 0 10px 28px rgba(21, 154, 156, .18);
+        }
+
+        .purple-glow {
+            box-shadow: 0 10px 28px rgba(138, 108, 201, .16);
+        }
+
+        .glass-panel {
+            background: rgba(255, 253, 243, .88);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(22, 134, 92, .16);
+            box-shadow: 0 8px 30px rgba(11, 79, 63, .07);
+        }
+
+        .glass-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, .94), rgba(239, 248, 234, .92));
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(22, 134, 92, .15);
+            border-radius: 22px;
+            box-shadow: 0 8px 26px rgba(11, 79, 63, .08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(21, 154, 156, .45);
+            box-shadow: 0 16px 36px rgba(11, 79, 63, .13);
+            transform: translateY(-2px);
+        }
+
+        /* Keep text readable after moving from dark mode to ivory mode */
+        .text-white {
+            color: var(--eco-text) !important;
+        }
+
+        /* White text remains white on strong CTA/gradient controls */
+        .bg-gradient-to-r.text-white,
+        .bg-gradient-to-r .text-white,
+        a.bg-gradient-to-r,
+        button.bg-gradient-to-r {
+            color: #fff !important;
+        }
+
+        /* Image overlays still need white text */
+        .absolute .text-white,
+        .relative .text-white {
+            color: #fff;
+        }
+
+        /* Eco-style buttons */
+        .eco-primary {
+            background: linear-gradient(135deg, var(--eco-forest), var(--eco-teal), var(--eco-lime));
+            color: #fff !important;
+            border-radius: 14px;
+            box-shadow: 0 10px 24px rgba(21, 154, 156, .18);
+        }
+
+        .eco-primary:hover {
+            box-shadow: 0 14px 32px rgba(21, 154, 156, .26);
+            transform: translateY(-2px);
+        }
+
+        /* Circular eco icon treatment */
+        .eco-icon {
+            border-radius: 999px !important;
+            background: linear-gradient(145deg, #F4F8DF, #DFF1E4);
+            border: 1px solid rgba(22, 134, 92, .18);
+            color: var(--eco-green);
+        }
+
+        /* Brochure-like section transitions */
+        section {
+            position: relative;
+        }
+
+        section::after {
+            content: "";
+            position: absolute;
+            left: 8%;
+            right: 8%;
+            bottom: 0;
+            height: 1px;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(21, 154, 156, .18),
+                    rgba(139, 207, 50, .28),
+                    transparent);
+        }
+
+        /* Social colors stay recognizable */
+        .social-linkedin:hover {
+            border-color: #0077b5;
+            color: #0077b5;
+            box-shadow: 0 0 18px rgba(0, 119, 181, .18);
+        }
+
+        .social-instagram:hover {
+            border-color: #e1306c;
+            color: #e1306c;
+            box-shadow: 0 0 18px rgba(225, 48, 108, .16);
+        }
+
+        .social-facebook:hover {
+            border-color: #1877f2;
+            color: #1877f2;
+            box-shadow: 0 0 18px rgba(24, 119, 242, .16);
+        }
+
+        /* =========================================================
+   HORIZON 2026 — TWO COLUMN HERO
+   ========================================================= */
+
+
+        /* =========================================
+   HORIZON 2026 — RESPONSIVE HERO
+   ========================================= */
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            align-items: center;
+            gap: clamp(1.5rem, 3vw, 3rem);
+            width: 100%;
+            min-width: 0;
+        }
+
+        .hero-content,
+        .hero-visual {
+            min-width: 0;
+            width: 100%;
+        }
+
+        .hero-content {
+            text-align: left;
+        }
+
+        .hero-content h1 {
+            max-width: 100%;
+            line-height: 1.1;
+            overflow-wrap: break-word;
+        }
+
+        .hero-content p {
+            max-width: 42rem;
+            width: 100%;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 0;
+        }
+
+        .hero-animation {
+            display: block;
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            object-fit: contain;
+            background: transparent !important;
+            mix-blend-mode: multiply;
+            filter:
+                drop-shadow(0 20px 35px rgba(11, 79, 63, .12)) drop-shadow(0 0 35px rgba(21, 154, 156, .12));
+            animation: horizonSpin 24s linear infinite;
+            transform-origin: center center;
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        .hero-visual::before {
+            content: "";
+            position: absolute;
+            width: min(80%, 360px);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: radial-gradient(circle,
+                    rgba(139, 207, 50, .20) 0%,
+                    rgba(21, 154, 156, .13) 35%,
+                    transparent 72%);
+            filter: blur(35px);
+            z-index: -1;
+        }
+
+        .hero-countdown {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 520px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .hero-countdown>div {
+            min-width: 0;
+            text-align: center;
+        }
+
+        @keyframes horizonSpin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Tablets and smaller screens */
+        @media (max-width: 1023px) {
+            .hero-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 1.5rem;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-countdown {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-visual {
+                order: 2;
+            }
+
+            .hero-animation {
+                max-width: min(100%, 460px);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            .hero-visual {
+                min-height: 0;
+            }
+
+            .hero-animation {
+                max-width: min(100%, 360px);
+            }
+
+            .hero-countdown {
+                gap: 0.4rem;
+            }
+
+            .hero-countdown>div {
+                padding: 0.5rem 0.2rem;
+            }
+
+            .hero-countdown>div>span:first-child {
+                font-size: clamp(1rem, 5vw, 1.5rem);
+            }
+
+            .hero-visual::before {
+                width: 75%;
+            }
+        }
+
+        /* Respect reduced-motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            .hero-animation {
+                animation: none;
+                will-change: auto;
+            }
+        }
+
+        /* Lazy image initial state */
+        img.lazy-anim {
+            opacity: 0;
+            transform: scale(0.97) translateY(8px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        /* Loaded state */
+        img.lazy-anim.is-loaded {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    </style>
+</head>
+
+<!-- HORIZON 2026 visual theme: Environmental Sustainability | forest green | teal | lime | ivory | eco gradients -->
+
+<body class="bg-[#F7F6E8] text-[#123F38] font-sans antialiased overflow-x-hidden">
+
+    <!-- HEADER NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Branding -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <!-- Logo -->
+                    <div class="w-10 h-10 rounded-xl bg-[#F7F6E8] p-1 shadow-lg shadow-[#159A9C]/20
+               group-hover:scale-105 transition-transform overflow-hidden flex items-center justify-center">
+
+                        <img src="images/HEROSPIN.png" alt="Horizon 2026 Logo" class="w-full h-full object-contain"
+                            loading="eager">
+                    </div>
+
+                    <!-- Brand Name -->
+                    <div>
+                        <span class="font-orbitron font-extrabold text-xl tracking-wider text-white">
+                            HORIZON
+                        </span>
+                        <span class="font-orbitron font-extrabold text-xl text-[#159A9C]">
+                            2026
+                        </span>
+
+                        <p class="text-[9px] uppercase tracking-widest text-[#5C776F] font-medium -mt-1">
+                            SRLIMBA Campus Fest
+                        </p>
+                    </div>
+                </a>
+
+
+
+                <!-- Desktop Nav Links -->
+                <nav
+                    class="hidden lg:flex items-center space-x-7 text-xs font-semibold uppercase tracking-wider text-[#315C52]">
+                    <a href="#home" class="hover:text-[#16865C] transition-colors">Home</a>
+                    <a href="#competitions" class="hover:text-[#16865C] transition-colors">Events</a>
+                    <a href="#photos-section" class="hover:text-[#16865C] transition-colors">Gallery</a>
+                    <a href="#videos-section" class="hover:text-[#16865C] transition-colors">Videos</a>
+                    <a href="#brochure" class="hover:text-[#16865C] transition-colors">Brochure</a>
+                    <a href="#sponsors" class="hover:text-[#16865C] transition-colors">Sponsors</a>
+                    <a href="#contact" class="hover:text-[#16865C] transition-colors">Contact</a>
+                </nav>
+
+                <!-- Navigation Action Links -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="https://chat.whatsapp.com/EmrXQMzKpZ3AJ3n7VIuhZO?s=cl&p=a&mlu=4&ilr=4&iam=2"
+                        target="_blank" rel="noopener noreferrer"
+                        class="px-3.5 py-2 rounded-lg glass-card text-[#16865C] hover:text-white border border-[#16865C]/35 hover:bg-[#16865C]/15 text-xs font-semibold transition-all flex items-center gap-1.5">
+                        <i class="fa-brands fa-whatsapp text-[#16865C] text-sm"></i>
+                        <span>Join Us</span>
+                    </a>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform"
+                        target="_blank" rel="noopener noreferrer"
+                        class="px-4 py-2 rounded-lg bg-gradient-to-r from-[#16865C] via-[#159A9C] to-[#8BCF32] text-white font-bold text-xs hover:shadow-lg hover:shadow-[#159A9C]/30 transition-all flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-plus text-xs"></i>
+                        <span>Register Now</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden">
+                    <button id="mobile-menu-btn" class="text-[#315C52] hover:text-white p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden glass-panel border-b border-[#C9DDD0] px-4 pt-2 pb-6 space-y-3">
+            <a href="#home"
+                class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-[#DDEBDF] hover:text-[#16865C]">Home</a>
+            <a href="#competitions"
+                class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-[#DDEBDF] hover:text-[#16865C]">Events &
+                Competitions</a>
+            <a href="#photos-section"
+                class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-[#DDEBDF] hover:text-[#16865C]">Past
+                Photos</a>
+            <a href="#videos-section"
+                class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-[#DDEBDF] hover:text-[#16865C]">Past
+                Videos</a>
+            <a href="#brochure"
+                class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-[#DDEBDF] hover:text-[#16865C]">Fest
+                Brochure</a>
+            <a href="#sponsors"
+                class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-[#DDEBDF] hover:text-[#16865C]">Sponsors</a>
+            <a href="#contact"
+                class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-[#DDEBDF] hover:text-[#16865C]">Contact
+                Us</a>
+
+            <div class="pt-2 border-t border-[#C9DDD0] space-y-2">
+                <a href="https://chat.whatsapp.com/EmrXQMzKpZ3AJ3n7VIuhZO?s=cl&p=a&mlu=4&ilr=4&iam=2" target="_blank"
+                    class="w-full inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-lg bg-[#16865C]/10 border border-emerald-500/50 text-[#16865C] font-semibold text-xs"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp text-[#16865C]"></i>
+                    Join us on WhatsApp
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform" target="_blank"
+                    class="w-full inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-lg bg-gradient-to-r from-[#16865C] to-[#159A9C] text-white font-bold text-xs"
+                    rel="noopener noreferrer">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Register via Google Form
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- =========================================================
+     HORIZON 2026 — HERO SECTION
+     TWO COLUMN LAYOUT
+     ========================================================= -->
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
+
+        <!-- Clean / transparent hero background -->
+        <div class="absolute inset-0 pointer-events-none">
+
+            <!-- Soft environmental glow -->
+            <div class="absolute top-20 left-10 w-[420px] h-[420px]
+                   bg-[#8BCF32]/10 rounded-full blur-[130px]">
+            </div>
+
+            <div class="absolute bottom-10 right-10 w-[450px] h-[450px]
+                   bg-[#159A9C]/10 rounded-full blur-[140px]">
+            </div>
+
+            <div class="absolute top-1/2 left-1/2
+                   -translate-x-1/2 -translate-y-1/2
+                   w-[500px] h-[300px]
+                   bg-[#16865C]/5 rounded-full blur-[120px]">
+            </div>
+
+        </div>
+
+        <!-- HERO CONTAINER -->
+        <div class="relative z-10 max-w-7xl mx-auto
+               px-4 sm:px-6 lg:px-8 w-full">
+
+            <div class="hero-grid">
+
+                <!-- =================================================
+                 LEFT SIDE — EXISTING HORIZON INTERFACE
+                 ================================================= -->
+
+                <div class="hero-content">
+
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2
+                           px-4 py-1.5 rounded-full
+                           glass-card
+                           border border-[#159A9C]/30
+                           text-[#159A9C]
+                           text-xs font-semibold
+                           uppercase tracking-widest mb-6">
+
+                        <span>
+                            Annual Inter-College Mega Management Fest
+                        </span>
+                    </div>
+
+
+                    <!-- Main Heading: HORIZON 2026 Logo -->
+                    <div class="mb-5"> <img src="images/Horizon main.png" alt="HORIZON 2026"
+                            class="w-full h-auto object-contain object-left" fetchpriority="high"> </div>
+
+
+                    <!-- Description -->
+                    <p class="font-sans
+                           text-base sm:text-lg
+                           text-[#315C52]
+                           max-w-2xl
+                           mb-8
+                           font-light
+                           leading-relaxed">
+
+                        elebrating leadership, creativity, innovation, and strategic thinking. Bringing together
+                        students from diverse colleges, the fest offers an exciting platform to showcase managerial
+                        skills, explore entrepreneurial ideas, and compete in engaging events while creating
+                        unforgettable campus memories.
+
+                    </p>
+
+                    <!-- Badge2 -->
+                    <div class="inline-flex items-center gap-2
+                           px-4 py-1.5 rounded-full
+                           glass-card
+                           border border-[#159A9C]/30
+                           text-[#7656B5]
+                           text-xs font-semibold
+                           uppercase tracking-widest mb-6">
+
+                        <span>
+                            From 10 & 11-Dec-2026 09:00AM
+                        </span>
+
+                    </div>
+
+
+                    <!-- =================================================
+                     COUNTDOWN
+                     ================================================= -->
+
+                    <div class="hero-countdown
+                           grid grid-cols-4
+                           gap-2 sm:gap-3
+                           mb-10">
+
+                        <!-- DAYS -->
+                        <div class="glass-card
+                               p-3
+                               rounded-xl
+                               border border-[#159A9C]/20">
+
+                            <span id="timer-days" class="font-orbitron
+                                   text-2xl sm:text-3xl
+                                   font-bold
+                                   text-[#159A9C]">
+
+                                00
+
+                            </span>
+
+                            <span class="block
+                                   text-[10px]
+                                   text-[#5C776F]
+                                   uppercase
+                                   tracking-wider
+                                   mt-1">
+
+                                Days
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- HOURS -->
+                        <div class="glass-card
+                               p-3
+                               rounded-xl
+                               border border-[#159A9C]/20">
+
+                            <span id="timer-hours" class="font-orbitron
+                                   text-2xl sm:text-3xl
+                                   font-bold
+                                   text-[#7656B5]">
+
+                                00
+
+                            </span>
+
+                            <span class="block
+                                   text-[10px]
+                                   text-[#5C776F]
+                                   uppercase
+                                   tracking-wider
+                                   mt-1">
+
+                                Hours
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- MINUTES -->
+                        <div class="glass-card
+                               p-3
+                               rounded-xl
+                               border border-[#159A9C]/20">
+
+                            <span id="timer-minutes" class="font-orbitron
+                                   text-2xl sm:text-3xl
+                                   font-bold
+                                   text-[#159A9C]">
+
+                                00
+
+                            </span>
+
+                            <span class="block
+                                   text-[10px]
+                                   text-[#5C776F]
+                                   uppercase
+                                   tracking-wider
+                                   mt-1">
+
+                                Mins
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- SECONDS -->
+                        <div class="glass-card
+                               p-3
+                               rounded-xl
+                               border border-[#159A9C]/20">
+
+                            <span id="timer-seconds" class="font-orbitron
+                                   text-2xl sm:text-3xl
+                                   font-bold
+                                   text-[#7656B5]">
+
+                                00
+
+                            </span>
+
+                            <span class="block
+                                   text-[10px]
+                                   text-[#5C776F]
+                                   uppercase
+                                   tracking-wider
+                                   mt-1">
+
+                                Secs
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+     CTA BUTTONS
+     ================================================= -->
+
+
+                    <!-- CTA BUTTONS -->
+                    <div class="w-full max-w-2xl mx-auto lg:mx-0">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 items-stretch">
+
+                            <!-- REGISTER BUTTON -->
+                            <a href="https://forms.gle/NDnWb37kH7DcYjDQ7" target="_blank" rel="noopener noreferrer"
+                                class="group flex w-full min-w-0 h-full min-h-[52px]
+                  items-center justify-center gap-2
+                  rounded-xl px-3 sm:px-4 py-3
+                  bg-gradient-to-r from-[#16865C]
+                  via-[#159A9C] to-[#8BCF32]
+                  text-white font-bold text-sm
+                  leading-tight text-center
+                  transition-all duration-300
+                  hover:shadow-xl hover:shadow-[#159A9C]/30
+                  hover:-translate-y-0.5">
+
+                                <i class="fa-solid fa-file-signature shrink-0"></i>
+
+                                <span class="min-w-0 flex-1">
+                                    Register via Google Form
+                                </span>
+
+                                <i class="fa-solid fa-arrow-up-right-from-square
+                      text-xs shrink-0"></i>
+                            </a>
+
+                            <!-- BROCHURE BUTTON -->
+                            <a href="#brochure" class="group flex w-full min-w-0 h-full min-h-[52px]
+                  items-center justify-center gap-2
+                  rounded-xl px-3 sm:px-4 py-3
+                  glass-card text-[#315C52]
+                  border border-[#B7D0C0]
+                  font-semibold text-sm leading-tight text-center
+                  transition-all duration-300
+                  hover:border-[#159A9C]
+                  hover:text-[#16865C]
+                  hover:-translate-y-0.5">
+
+                                <i class="fa-solid fa-file-pdf
+                      text-[#7656B5] shrink-0"></i>
+
+                                <span class="min-w-0 flex-1">
+                                    Download Brochure
+                                </span>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================================
+                 RIGHT SIDE — YOUR ANIMATION IMAGE
+                 ================================================= -->
+
+                <div class="hero-visual">
+
+                    <!--
+                    REPLACE THIS IMAGE PATH
+
+                    Example:
+                    images/horizon-animation.png
+
+                    or:
+                    images/horizon-animation.gif
+
+                    or:
+                    images/horizon-animation.webp
+                -->
+
+                    <img src="images/HEROSPINM.jpeg" alt="HORIZON 2026 Animation" class="hero-animation"
+                        loading="eager">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="competitions" class="py-20 relative bg-[#EEF5E9]/60 border-t border-[#C9DDD0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-orbitron text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                    FEST <span class="gold-gradient-text">EVENTS & GAMES</span>
+                </h2>
+                <p class="text-[#5C776F] text-sm max-w-xl mx-auto">
+                    Click on any event card to review complete highlight rules, Fee details and directly access event
+                    registration.
+                </p>
+            </div>
+
+            <!-- Event Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Treasure Hunt -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('Treasure')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HECOXPLR.png" alt="Eco Explorer"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Eco Explorer')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                Treasure Hunt
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Eco Explorer
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Follow the clues, solve the puzzles, and embark on an exciting quest to uncover the hidden
+                            treasure.
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹600
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Earth's Got Talent -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('Talent')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HERTGTLT.png" alt="Earth`s Got Talent"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Earth`s Got Talent')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                Talent Show
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Earth's Got Talent
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Take centre stage, showcase your unique talents, and let your passion shine before the
+                            crowd.
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Business Quiz -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('Genius')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HECGNS.png" alt="Eco Genius"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Eco Genius')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                Business Quiz
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Eco Genius
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Challenge your business knowledge, sharpen your thinking, and compete to become the ultimate
+                            quiz champion
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dalal Street -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('Bull')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HGRNBL.jpg" alt="Green Bull"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Green Bull')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                Dalal Street
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Green Bull
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Experience the thrill of the stock market, make strategic investment decisions, and see if
+                            you can beat the market
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹400
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brandsome -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('Brandsome')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HBRNSTR.png" alt="Brand Strom"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Brand Strom')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                Brandsome
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Brand Strom
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Identify, analyse, and celebrate the brands that shape our everyday world.
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹600
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Youth Parliament -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('Voices')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HGRNVIC.jpg" alt="Green Voices"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Green Voices')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                Youth Parliament
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Green Voices
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Debate, deliberate, and present powerful perspectives like a true leader.
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food craft -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('Fcraft')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HFRMTFRK.jpg" alt="Farm to Fork"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Farm to Fork')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                Food craft
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Farm to Fork
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Transform simple ingredients into creative, appealing, and delicious creations
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹400
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- T-Shirt Painting -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-orange-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('SPainting')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HTSPRNT.png" alt="T-Shirt Painting"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'T-Shirt Painting')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-500/40">
+                                T-Shirt Painting
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-orange-400/50 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            T-Shirt Painting
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Turn a plain T-shirt into a masterpiece with your imagination, artistic skills, and a splash
+                            of colour
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================= NEW GAMING / EVENT CARDS ================= -->
+
+                <!-- Clay Craft -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-green-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('CCraft')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HCLCRFT.jpg" alt="Clay Craft"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Clay Craft')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-green-400 bg-green-950/80 px-2.5 py-1 rounded-full border border-green-500/40">
+                                Fillers
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-green-400/50 flex items-center justify-center text-green-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Clay Craft
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Mould your imagination into reality and transform simple clay into creative works of art
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Reelovation -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-red-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('RMaking')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HRLVRS.jpg" alt="Reelovation"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Reelovation')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-red-400 bg-red-950/80 px-2.5 py-1 rounded-full border border-red-500/40">
+                                Reel Making
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-red-400/50 flex items-center justify-center text-red-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Reelovation
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Bring your ideas to life through creative storytelling, captivating visuals, and engaging
+                            short-form videos
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Online Gaming -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-yellow-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('OGaming')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HONLGMG.png" alt="Battlefield"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Battlefield')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-yellow-400 bg-yellow-950/80 px-2.5 py-1 rounded-full border border-yellow-500/40">
+                                Online Gaming
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-yellow-400/50 flex items-center justify-center text-yellow-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Battlefield
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Enter the virtual arena, outsmart your opponents, and prove your gaming skills in an
+                            exciting battle for victory
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹600
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Wall Hanging Craft -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-blue-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('WFiller')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HWHCRFT.jpg" alt="Wall Hanging Craft"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Wall Hanging Craft')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded-full border border-blue-500/40">
+                                Wallfiller
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-blue-400/50 flex items-center justify-center text-blue-400">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Wall Hanging Craft
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Transform simple materials into stunning wall décor that reflects your creativity and
+                            artistic flair
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Filler -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-purple-500/50 transition-all cursor-pointer group"
+                    onclick="openEventModal('bouquet')">
+
+                    <div class="relative h-48 overflow-hidden bg-[#F7F6E8] flex items-center justify-center">
+                        <img src="images/HPIPBQT.jpg" alt="Filler"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            onclick="event.stopPropagation(); openLightbox(this.src, 'Pipe Bouquet')">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-[] via-transparent to-transparent">
+                        </div>
+
+                        <div class="absolute top-3 left-3">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider text-[#7656B5] bg-[#8A6CC9]/10/80 px-2.5 py-1 rounded-full border border-[#8A6CC9]/40">
+                                Filler
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-3 right-3">
+                            <span
+                                class="w-9 h-9 rounded-full bg-[#F7F6E8]/80 border border-purple-400/50 flex items-center justify-center text-[#7656B5]">
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-lg text-white mb-1">
+                            Pipe Bouquet
+                        </h3>
+
+                        <p class="text-[#5C776F] text-xs line-clamp-2 mb-4">
+                            Bend, shape, and create a beautiful bouquet from simple craft materials
+                        </p>
+
+                        <div class="flex items-center justify-between pt-4 border-t border-[#C9DDD0]/80 text-xs">
+                            <span class="text-[#159A9C] font-bold">
+                                <i class="fa-solid fa-wallet mr-1"></i> Fee: ₹200 (Per Person)
+                            </span>
+
+                            <span class="text-[#5C776F] group-hover:text-white flex items-center gap-1 font-semibold">
+                                Details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PREVIOUS YEAR PHOTOS SECTION -->
+    <section id="photos-section" class="py-20 relative bg-[#F7F6E8]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#159A9C]/10 border border-[#159A9C]/30 text-[#159A9C] text-xs font-semibold uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-camera"></i> Memory Archive
+                </div>
+                <h2 class="font-orbitron text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                    PREVIOUS YEAR <span class="gold-gradient-text">HIGHLIGHTS</span>
+                </h2>
+                <p class="text-[#5C776F] text-sm max-w-xl mx-auto">
+                    Glance back at the energy and crowd from Horizon's past editions. (Images dynamically referenced
+                    from local <code class="text-[#159A9C]">images/gallery/</code> folder).
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Image Item 1 -->
+                <div class="relative group overflow-hidden rounded-2xl glass-card border border-[#C9DDD0] h-64 cursor-pointer"
+                    onclick="openLightbox('https://placehold.co/800x600/0b1120/38bdf8?text=images/gallery/concert2025.jpg')">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80"
+                        alt="Concert Stage"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        onerror="this.src='https://placehold.co/800x600/0b1120/38bdf8?text=images/gallery/concert2025.jpg'">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0B4F3F] via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold uppercase text-[#159A9C]">Concert Night</span>
+                        <h4 class="text-sm font-bold text-white">EDM Headline Show</h4>
+                    </div>
+                </div>
+
+                <!-- Image Item 2 -->
+                <div class="relative group overflow-hidden rounded-2xl glass-card border border-[#C9DDD0] h-64 cursor-pointer"
+                    onclick="openLightbox('https://placehold.co/800x600/0b1120/38bdf8?text=images/gallery/esports2025.jpg')">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+                        alt="Esports Stage"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        onerror="this.src='https://placehold.co/800x600/0b1120/38bdf8?text=images/gallery/esports2025.jpg'">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0B4F3F] via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold uppercase text-[#7656B5]">Esports Arena</span>
+                        <h4 class="text-sm font-bold text-white">Valorant LAN Finals</h4>
+                    </div>
+                </div>
+
+                <!-- Image Item 3 -->
+                <div class="relative group overflow-hidden rounded-2xl glass-card border border-[#C9DDD0] h-64 cursor-pointer"
+                    onclick="openLightbox('https://placehold.co/800x600/0b1120/38bdf8?text=images/gallery/dance2025.jpg')">
+                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+                        alt="Dance Performance"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        onerror="this.src='https://placehold.co/800x600/0b1120/38bdf8?text=images/gallery/dance2025.jpg'">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0B4F3F] via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold uppercase text-pink-400">Cultural Stage</span>
+                        <h4 class="text-sm font-bold text-white">Mega Group Dance</h4>
+                    </div>
+                </div>
+
+                <!-- Image Item 4 -->
+                <div class="relative group overflow-hidden rounded-2xl glass-card border border-[#C9DDD0] h-64 cursor-pointer"
+                    onclick="openLightbox('images/bassundi.jpeg')">
+                    <img src="images/bassundi.jpeg" alt="Hackathon Night"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        onerror="this.src='images/bassundi.jpeg'">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0B4F3F] via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4">
+                        <span class="text-[10px] font-bold uppercase text-blue-400">Technical</span>
+                        <h4 class="text-sm font-bold text-white">Overnight CodeSprint</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- MORE PHOTOS BUTTON -->
+            <div class="flex justify-center mt-8">
+
+                <a href="https://drive.google.com/drive/folders/1vIUSXUGvAPSDq-7ix4LbUvYnbOgu8ZQy" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 px-6 py-3
+               rounded-xl
+               border border-[#159A9C]/40
+               bg-[#159A9C]/10
+               text-[#159A9C]
+               font-orbitron font-bold text-sm
+               hover:bg-[#159A9C]/20
+               hover:border-[#159A9C]
+               hover:text-white
+               transition-all duration-300
+               shadow-lg shadow-[#159A9C]/10">
+
+                    <i class="fa-brands fa-google-drive text-lg
+                  group-hover:scale-110 transition-transform"></i>
+
+                    <span>VIEW MORE PHOTOS</span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs
+                  group-hover:translate-x-1 group-hover:-translate-y-1
+                  transition-transform"></i>
+
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREVIOUS YEAR VIDEOS SECTION -->
+    <section id="videos-section" class="py-20 relative bg-[#EEF5E9]/60 border-t border-[#C9DDD0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8A6CC9]/10 border border-[#8A6CC9]/30 text-[#7656B5] text-xs font-semibold uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-circle-play"></i> Video Archive
+                </div>
+                <h2 class="font-orbitron text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                    GOOGLE DRIVE <span class="gold-gradient-text">VIDEO REELS</span>
+                </h2>
+                <p class="text-[#5C776F] text-sm max-w-xl mx-auto">
+                    Watch official recap videos and key moments streamed directly via Google Drive links.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Video Card 1 -->
+                <div
+                    class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-[#159A9C]/40 transition-all group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/Highlights/HSWELEV.png"
+                            alt="Video 1"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-[#F7F6E8]/50 flex items-center justify-center">
+                            <a href="https://drive.google.com/file/d/1N2sRYQdE_P3buQC8MPnr38hB4ZnIgqOg/view"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-14 h-14 rounded-full bg-purple-600/90 text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-purple-600/40">
+                                <i class="fa-solid fa-play text-lg ml-1"></i>
+                            </a>
+                        </div>
+                        <span
+                            class="absolute bottom-3 right-3 bg-[#F7F6E8]/80 text-[#159A9C] font-mono text-[11px] px-2 py-0.5 rounded border border-[#B7D0C0]">00:45</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-orbitron font-bold text-white text-base mb-1">Horizon 2025 Official Welcome
+                            Event
+                        </h4>
+                        <p class="text-[#5C776F] text-xs mb-4">A warm welcome introducing the event, its vision, and
+                            what to expect.</p>
+                        <a href="https://drive.google.com/file/d/1N2sRYQdE_P3buQC8MPnr38hB4ZnIgqOg/view" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-xs text-[#159A9C] hover:text-[#16865C] font-semibold flex items-center gap-1.5">
+                            <i class="fa-brands fa-google-drive"></i> Watch on Google Drive <i
+                                class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div
+                    class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-[#159A9C]/40 transition-all group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/Highlights/HSHLTMEM.png"
+                            alt="Video 2"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-[#F7F6E8]/50 flex items-center justify-center">
+                            <a href="https://drive.google.com/file/d/1Hr6YM3MgTMz_eb8_emI4mWgQ7n_3Amtu/view"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-14 h-14 rounded-full bg-cyan-600/90 text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-cyan-600/40">
+                                <i class="fa-solid fa-play text-lg ml-1"></i>
+                            </a>
+                        </div>
+                        <span
+                            class="absolute bottom-3 right-3 bg-[#F7F6E8]/80 text-[#159A9C] font-mono text-[11px] px-2 py-0.5 rounded border border-[#B7D0C0]">00:34</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-orbitron font-bold text-white text-base mb-1">Event Highlights & memories</h4>
+                        <p class="text-[#5C776F] text-xs mb-4">Relive the best moments, key activities, and
+                            unforgettable experiences from the event.</p>
+                        <a href="https://drive.google.com/file/d/1Hr6YM3MgTMz_eb8_emI4mWgQ7n_3Amtu/view" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-xs text-[#159A9C] hover:text-[#16865C] font-semibold flex items-center gap-1.5">
+                            <i class="fa-brands fa-google-drive"></i> Watch on Google Drive <i
+                                class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div
+                    class="glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] hover:border-[#159A9C]/40 transition-all group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/Highlights/HSSPONNPTR.png"
+                            alt="Video 3"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-[#F7F6E8]/50 flex items-center justify-center">
+                            <a href="https://drive.google.com/file/d/1mtAQu3pejfaAy-hEvy7hiyat1X_ho-ZN/view"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-14 h-14 rounded-full bg-purple-600/90 text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-purple-600/40">
+                                <i class="fa-solid fa-play text-lg ml-1"></i>
+                            </a>
+                        </div>
+                        <span
+                            class="absolute bottom-3 right-3 bg-[#F7F6E8]/80 text-[#159A9C] font-mono text-[11px] px-2 py-0.5 rounded border border-[#B7D0C0]">01:22</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-orbitron font-bold text-white text-base mb-1">Our Sponsors & Partners</h4>
+                        <p class="text-[#5C776F] text-xs mb-4">Celebrating the sponsors and partners who made this event
+                            possible through their valuable support.</p>
+                        <a href="https://drive.google.com/file/d/1mtAQu3pejfaAy-hEvy7hiyat1X_ho-ZN/view" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-xs text-[#159A9C] hover:text-[#16865C] font-semibold flex items-center gap-1.5">
+                            <i class="fa-brands fa-google-drive"></i> Watch on Google Drive <i
+                                class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MORE VIDEOS BUTTON -->
+        <div class="flex justify-center mt-8">
+
+            <a href="https://drive.google.com/drive/folders/10y8PjneaI6wQhrHyAXljGL6XuQjLudRP" target="_blank"
+                rel="noopener noreferrer" class="group inline-flex items-center gap-3 px-6 py-3
+                    rounded-xl
+                    border border-[#8A6CC9]/40
+                    bg-[#8A6CC9]/10
+                    text-[#7656B5]
+                    font-orbitron font-bold text-sm
+                    hover:bg-[#8A6CC9]/20
+                    hover:border-purple-400
+                    hover:text-white
+                    transition-all duration-300
+                    shadow-lg shadow-purple-500/10">
+
+                <i class="fa-brands fa-google-drive text-lg
+                    group-hover:scale-110 transition-transform"></i>
+
+                <span>VIEW MORE VIDEOS</span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs
+                    group-hover:translate-x-1 group-hover:-translate-y-1
+                    transition-transform"></i>
+
+            </a>
+
+        </div>
+        </div>
+
+    </section>
+
+    <!-- BROCHURE SECTION -->
+    <section id="brochure" class="py-14 sm:py-16 lg:py-20 relative bg-[#F7F6E8]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="glass-card rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12
+                    border border-[#159A9C]/20">
+
+                <div class="max-w-3xl mx-auto text-center">
+
+                    <!-- Label -->
+                    <span class="inline-block text-[10px] sm:text-xs font-bold
+                             text-[#7656B5] uppercase tracking-widest
+                             bg-[#8A6CC9]/10 px-3 py-1.5 rounded-full
+                             border border-[#8A6CC9]/30">
+                        Official Event Guide
+                    </span>
+
+                    <!-- Heading -->
+                    <h2 class="font-orbitron text-2xl sm:text-3xl md:text-4xl
+                           font-extrabold text-white mt-4 mb-4 leading-tight">
+                        HORIZON 2026 BROCHURE
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="text-[#315C52] text-xs sm:text-sm md:text-base
+                          mb-7 leading-relaxed max-w-2xl mx-auto">
+                        Download the complete official rulebook, schedule matrix,
+                        campus map, guidelines, and faculty contact details.
+                    </p>
+
+                    <!-- Download Button -->
+                    <div class="w-full flex justify-center">
+
+                        <a href="pdf/Horizon 2026 brch.pdf" download class="w-full sm:w-auto
+                              min-h-[48px] sm:min-h-[52px]
+                              px-5 sm:px-7
+                              py-3
+                              rounded-xl
+                              bg-gradient-to-r from-[#16865C] to-[#159A9C]
+                              text-white font-bold text-xs sm:text-sm
+                              flex items-center justify-center gap-2
+                              text-center
+                              shadow-md
+                              hover:shadow-lg
+                              hover:shadow-[#159A9C]/20
+                              hover:-translate-y-0.5
+                              active:translate-y-0
+                              transition-all duration-200">
+
+                            <i class="fa-solid fa-download shrink-0"></i>
+
+                            <span class="leading-tight">
+                                Download PDF
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SPONSORS & PARTNERSHIPS SECTION -->
+    <section id="sponsors" class="py-20 relative bg-[#EEF5E9]/60 border-t border-[#C9DDD0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-orbitron text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                    OUR FEST <span class="gold-gradient-text">SPONSORS & PARTNERS</span>
+                </h2>
+                <p class="text-[#5C776F] text-sm max-w-xl mx-auto mb-6">
+                    Powered by leading tech, gaming, and lifestyle brands. Interested in showcasing your brand to 5,000+
+                    students?
+                </p>
+
+                <!-- Dedicated Sponsorship Call to Action Banner -->
+                <div
+                    class="inline-flex flex-col sm:flex-row items-center gap-4 p-4 px-6 rounded-2xl glass-card border border-[#16865C]/35 bg-[#16865C]/10 max-w-2xl mx-auto shadow-lg">
+                    <div class="flex items-center gap-3 text-left">
+                        <!-- Company Logo Container -->
+                        <a href="https://chat.whatsapp.com/JMxxxuxyjT34hUK1qROvPT?s=sh&p=a&mlu=4&ilr=4&iam=2"><div
+                            class="w-16 h-16 rounded-full bg-white border-2 border-[#16865C] flex items-center justify-center overflow-hidden shrink-0 shadow-md">
+                            <img src="images/Sponser/VIOM.jpeg" alt="Your Company Logo" class="w-full h-full object-cover">
+                        </div></a>
+                        <a href="https://chat.whatsapp.com/JMxxxuxyjT34hUK1qROvPT?s=sh&p=a&mlu=4&ilr=4&iam=2"><div>
+                            <div class="flex items-center gap-2">
+                                <h4 class="text-sm font-bold text-white">Web Sponsor by V I O M</h4>
+
+                            </div>
+                            <p class="text-xs text-[#8EA8A0]">Partner with SRLIM for exclusive web visibility and brand promotion.</p>
+                        </div></a>
+                    </div>
+                    <a href="https://wa.me/919574262628?text=Hi!%20I%20am%20interested%20in%20sponsoring/partnering%20with%20HORIZON%202026.%20Please%20share%20the%20sponsorship%20deck."
+                        target="_blank" rel="noopener noreferrer"
+                        class="shrink-0 px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-bold text-xs transition-all flex items-center gap-2 shadow-md">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>HORIZON 2026 Sponsor Desk</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- TITLE SPONSORS -->
+            <div class="mt-16">
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                    <!-- Sponsor 1 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Sponser/HSWELL.jpeg" alt="Title Sponsor 1" class="max-h-24 max-w-[180px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            WELLNESS IMMIGRATION
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            TITLE SPONSOR
+                        </span>
+                    </div>
+
+                    <!-- Sponsor 2 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Sponser/HSCHPTN.jpeg" alt="Title Sponsor 2" class="max-h-24 max-w-[180px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            CHAIPARTNER
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            SUPPORTIVE SPONSOR
+                        </span>
+                    </div>
+
+                    <!-- Sponsor 3 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Sponser/HSWDK.jpeg" alt="Title Sponsor 3" class="max-h-24 max-w-[180px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            KHUSHALBHAI Jewellers
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            ASSOCIATE SPONSOR
+                        </span>
+                    </div>
+
+                    <!-- Sponsor 4 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Sponser/HSRNF.jpeg" alt="Title Sponsor 4" class="max-h-24 max-w-[180px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            ROYAL ENFIELD
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            SUPPORTIVE SPONSOR
+                        </span>
+                    </div>
+
+                    <!-- Sponsor 5 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Horizon main.png" alt="Title Sponsor 5" class="max-h-24 max-w-[180px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            SRLIMBA5
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            TITLE SPONSOR
+                        </span>
+                    </div>
+
+                    <!-- Sponsor 6 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Horizon main.png" alt="Title Sponsor 6" class="max-h-24 max-w-[180px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            SRLIMBA6
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            TITLE SPONSOR
+                        </span>
+                    </div>
+
+                    <!-- Sponsor 7 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Horizon main.png" alt="Title Sponsor 7" class="max-h-24 max-w-[180px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            SRLIMBA7
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            TITLE SPONSOR
+                        </span>
+                    </div>
+
+                    <!-- Sponsor 8 -->
+                    <div class="group rounded-2xl border border-purple-500/20
+                    bg-slate-300/60 p-6 flex flex-col items-center
+                    justify-center min-h-[180px]
+                    hover:border-purple-400/60
+                    hover:bg-[#8A6CC9]/10
+                    transition-all duration-300">
+
+                        <img src="images/Horizon main.png" alt="Title Sponsor 8" class="max-h-24 max-w-[190px] object-contain
+                        group-hover:scale-110 transition-transform duration-300">
+
+                        <p class="mt-4 text-sm font-orbitron font-bold
+                      text-white text-center">
+                            SRLIMBA
+                        </p>
+
+                        <span class="text-xs text-[#159A9C] mt-1">
+                            WEB SPONSOR
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-[#F7F6E8] relative border-t border-[#C9DDD0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-orbitron text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                    QUICK <span class="gold-gradient-text">CONTACT HELPDESK</span>
+                </h2>
+                <p class="text-[#5C776F] text-sm max-w-xl mx-auto">
+                    Direct WhatsApp query buttons configured for gaming, general events, and sponsor inquiries.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+
+                <!-- Sponsor Enquiry -->
+                <div
+                    class="glass-card rounded-2xl p-6 text-center border border-[#C9DDD0] hover:border-[#16865C]/35 transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-emerald-950 border border-emerald-500/30 text-[#16865C] flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-handshake text-xl"></i>
+                    </div>
+                    <h4 class="font-orbitron font-bold text-white text-base mb-1">Sponsor & Partners</h4>
+                    <p class="text-[#5C776F] text-xs mb-4">Stall booking, banner placement & branding decks.</p>
+                    <a href="https://wa.me/919574262628?text=Hi!%20I%20am%20interested%20in%20sponsoring/partnering%20with%20HORIZON%202026."
+                        target="_blank"
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Sponsor
+                    </a>
+                </div>
+                <!-- General Enquiry -->
+                <div
+                    class="glass-card rounded-2xl p-6 text-center border border-[#C9DDD0] hover:border-[#16865C]/35 transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-emerald-950 border border-emerald-500/30 text-[#16865C] flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    </div>
+                    <h4 class="font-orbitron font-bold text-white text-base mb-1">General Registration</h4>
+                    <p class="text-[#5C776F] text-xs mb-4">Query about college entry, pass collection & accommodation.
+                    </p>
+                    <a href="https://wa.me/916355320764?text=Hi!%20I%20have%20a%20general%20query%20regarding%20HORIZON%202026%20passes%20and%20entry."
+                        target="_blank"
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp General
+                    </a>
+                </div>
+
+                <!-- Game Enquiry -->
+                <div
+                    class="glass-card rounded-2xl p-6 text-center border border-[#C9DDD0] hover:border-[#16865C]/35 transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-emerald-950 border border-emerald-500/30 text-[#16865C] flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-headset text-xl"></i>
+                    </div>
+                    <h4 class="font-orbitron font-bold text-white text-base mb-1">Event Regis. & Rules</h4>
+                    <p class="text-[#5C776F] text-xs mb-4">Clarifications on team sizes, event schedules and cash
+                        prizes.</p>
+                    <a href="https://wa.me/917041677897?text=Hi!%20I%20want%20to%20enquire%20about%20HORIZON%202026%20rules%20registration%20%26%20available%20Slots."
+                        target="_blank"
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Help Desk
+                    </a>
+                </div>
+
+                <!-- Sponsor Enquiry -->
+                <div
+                    class="glass-card rounded-2xl p-6 text-center border border-[#C9DDD0] hover:border-[#16865C]/35 transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-emerald-950 border border-emerald-500/30 text-[#16865C] flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-handshake text-xl"></i>
+                    </div>
+                    <h4 class="font-orbitron font-bold text-white text-base mb-1">Payment & Tech Support</h4>
+                    <p class="text-[#5C776F] text-xs mb-4">Issues with registration fee receipts, UPI payments, or
+                        portal errors</p>
+                    <a href="https://wa.me/916359761992?text=Hi!%20I%20have%20issues%20regarding/payments%20with%20HORIZON%202026."
+                        target="_blank"
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>WhatsApp Tech Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING QUICK ACTION WHATSAPP BUTTON -->
+    <a href="https://chat.whatsapp.com/EmrXQMzKpZ3AJ3n7VIuhZO" target="_blank"
+        rel="noopener noreferrer" title="Chat on WhatsApp"
+        class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 text-navy-950 flex items-center justify-center shadow-xl shadow-emerald-500/30 hover:scale-110 transition-transform">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- FOOTER WITH SOCIAL MEDIA LINKS & ICONS -->
+    <footer class="py-12 border-t border-slate-900 bg-[#F7F6E8] text-[#5C776F]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-900">
+                <!-- Branding -->
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#16865C] to-[#159A9C] p-0.5">
+                        <div class="w-full h-full bg-[#F7F6E8] rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid fa-meteor text-[#159A9C] text-xs"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-orbitron font-bold text-base text-white">HORIZON <span
+                                class="text-[#159A9C]">2026</span></span>
+                        <p class="text-[10px] text-slate-500">Annual Inter-College Fest</p>
+                    </div>
+                </div>
+
+                <!-- SOCIAL MEDIA LINKS & ICONS (LinkedIn, Instagram, Facebook) -->
+                <div class="flex flex-col sm:flex-row items-center gap-3">
+                    <span
+                        class="text-xs font-semibold text-[#5C776F] uppercase tracking-widest text-center sm:text-left">Follow
+                        SRLIM on</span>
+                    <div class="flex items-center space-x-3">
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/company/horizon2026" target="_blank" rel="noopener noreferrer"
+                            title="LinkedIn Profile"
+                            class="social-linkedin w-10 h-10 rounded-xl glass-card border border-[#C9DDD0] text-[#315C52] flex items-center justify-center text-base transition-all hover:scale-110">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/horizon2026" target="_blank" rel="noopener noreferrer"
+                            title="Instagram Profile"
+                            class="social-instagram w-10 h-10 rounded-xl glass-card border border-[#C9DDD0] text-[#315C52] flex items-center justify-center text-base transition-all hover:scale-110">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://facebook.com/horizon2026" target="_blank" rel="noopener noreferrer"
+                            title="Facebook Page"
+                            class="social-facebook w-10 h-10 rounded-xl glass-card border border-[#C9DDD0] text-[#315C52] flex items-center justify-center text-base transition-all hover:scale-110">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>© 2026 HORIZON College Fest. All Rights Reserved.</p>
+                <p class="font-mono">Website Made by : Omkar H Pattnaik</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL FOR GALLERY -->
+    <div id="lightbox-modal"
+        class="fixed inset-0 z-50 bg-[#F7F6E8]/90 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full glass-card rounded-2xl overflow-hidden border border-[#C9DDD0] p-2">
+            <button onclick="closeLightbox()"
+                class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-[#F7F6E8]/80 text-[#315C52] hover:text-white flex items-center justify-center border border-[#B7D0C0]">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="Enlarged" class="w-full max-h-[75vh] object-contain rounded-xl">
+            <div class="p-4 text-center">
+                <h4 id="lightbox-caption" class="font-orbitron font-bold text-white text-base"></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- EVENT DETAILS MODAL -->
+    <div id="event-modal"
+        class="fixed inset-0 z-50 bg-[#F7F6E8]/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div
+            class="relative max-w-xl w-full glass-card rounded-2xl border border-[#159A9C]/30 p-6 sm:p-8 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeEventModal()"
+                class="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#EEF5E9] text-[#5C776F] hover:text-white flex items-center justify-center border border-[#C9DDD0]">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div id="modal-content">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- BROCHURE PREVIEW MODAL -->
+    <div id="brochure-modal"
+        class="fixed inset-0 z-50 bg-[#F7F6E8]/90 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="relative max-w-3xl w-full glass-card rounded-2xl border border-[#159A9C]/30 p-6">
+            <div class="flex items-center justify-between pb-4 border-b border-[#C9DDD0]">
+                <h3 class="font-orbitron font-bold text-white text-lg"><i
+                        class="fa-solid fa-book-open text-[#159A9C] mr-2"></i> HORIZON 2026 Brochure Preview</h3>
+                <button onclick="closeBrochureModal()"
+                    class="w-8 h-8 rounded-full bg-[#EEF5E9] text-[#5C776F] hover:text-white flex items-center justify-center border border-[#C9DDD0]">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="py-8 text-center space-y-4">
+                <i class="fa-solid fa-file-pdf text-6xl text-[#159A9C] mb-2"></i>
+                <h4 class="font-bold text-white text-base">Official Fest Handbook & Schedule Matrix</h4>
+                <p class="text-[#5C776F] text-xs max-w-md mx-auto">Contains event rules, cash prize breakups, route map,
+                    and faculty contact list.</p>
+                <div class="pt-4 flex justify-center gap-3">
+                    <a href="pdf/Horizon 2026 brch.pdf" download
+                        class="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-navy-950 font-bold text-xs flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> Download PDF Brochure
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT CONTROLLERS -->
+    <script>
+        // Mobile Navigation Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle menu
+        mobileBtn.addEventListener('click', (event) => {
+            event.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close when navbar option is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Close when clicking outside the menu
+        document.addEventListener('click', (event) => {
+            if (
+                !mobileMenu.classList.contains('hidden') &&
+                !mobileMenu.contains(event.target) &&
+                !mobileBtn.contains(event.target)
+            ) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Dynamic Countdown Timer (30 days target)
+        const targetDate = new Date("December 10, 2026 09:00:00").getTime();
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance <= 0) {
+                document.getElementById('timer-days').innerText = "00";
+                document.getElementById('timer-hours').innerText = "00";
+                document.getElementById('timer-minutes').innerText = "00";
+                document.getElementById('timer-seconds').innerText = "00";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            const minutes = Math.floor(
+                (distance % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            const seconds = Math.floor(
+                (distance % (1000 * 60)) / 1000
+            );
+
+            document.getElementById('timer-days').innerText = String(days).padStart(2, '0');
+            document.getElementById('timer-hours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('timer-minutes').innerText = String(minutes).padStart(2, '0');
+            document.getElementById('timer-seconds').innerText = String(seconds).padStart(2, '0');
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+        // Gallery Lightbox Controls
+        function openLightbox(imgSrc, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            img.src = imgSrc;
+            cap.innerText = caption;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Brochure Modal Controls
+        function openBrochureModal() {
+            const modal = document.getElementById('brochure-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeBrochureModal() {
+            const modal = document.getElementById('brochure-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Event Modal Dynamic Content Handler
+        const eventData = {
+            Treasure: {
+                title: 'Eco Explorer',
+                category: 'Treasure Hunt',
+                prize: '₹600 (Per Person : Rs. 150)',
+                rules: [
+                    '4 players per Team',
+                    'Clues must not be damaged or taken by other teams',
+                    'Only registered players can participate'
+                ],
+                facultyCoordinator: 'Dr. Paresh Dave, Dr. Ashish Patil ',
+                studentCoordinator: 'Vaishnavi, Rankawat Krishna, Nisarg',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            Talent: {
+                title: 'Earth`s Got Talent',
+                category: 'Talent Show',
+                prize: '₹200 (per person)',
+                rules: [
+                    'Individual or Team participation allowed',
+                    'A maximum of 2.5 minutes shall be provided to each participant',
+                    'Participants have to manage their own instruments'
+                ],
+                facultyCoordinator: 'Ms. Kinnari Thaker',
+                studentCoordinator: 'Bhumi, Darshi, Keshvi',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            Genius: {
+                title: 'Eco Genius',
+                category: 'Business Quiz',
+                prize: '₹600 (per person : ₹200)',
+                rules: [
+                    '3 players per team',
+                    'Participants cannot use any electronic devices during the event',
+                    'All the Q&A will be asked in English'
+                ],
+                facultyCoordinator: 'Dr. Hiren Patel, Dr. Harshesh Patel',
+                studentCoordinator: 'Meera, Hetakshi, Komal',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            Bull: {
+                title: 'Green Bull',
+                category: 'Dalal Street',
+                prize: '₹400 (per person : ₹200)',
+                rules: [
+                    '2 players per team',
+                    'There will be round based on Live Trading ',
+                    'Participants are required to bring their `LAPTOPS` with `internet connectivity.`'
+                ],
+                facultyCoordinator: 'Dr. Imran Sheikh, Dr. Swapna Nair',
+                studentCoordinator: 'Pratik, Tarannum, Keshvi',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            Brandsome: {
+                title: 'Brand Strom',
+                category: 'Brandsome',
+                prize: '₹600 (per person : ₹150)',
+                rules: [
+                    '4 players per team',
+                    'There will be rounds, which include games related to information about brands, logos, jingles etc',
+                    'Usage of mobile phones/laptops/internet or any other reading material shall not be allowed during the game'
+                ],
+                facultyCoordinator: 'Dr Ravi Vaidya, Dr. Rupal Chaudhari',
+                studentCoordinator: 'Anchal, Divya, Pujan',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            Voices: {
+                title: 'Green Voices',
+                category: 'Youth Parliament',
+                prize: '₹200 (per person)',
+                rules: [
+                    'There will be individual participation in this event',
+                    'Medium of expression of thoughts will be English, Hindi or Gujarati',
+                    'The event will be divided into several rounds, that will be declared later'
+                ],
+                facultyCoordinator: 'Dr. Parinaz Bharucha, Dr. Drashti Shah',
+                studentCoordinator: 'Manasvi, Kirtan, Saloni',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            Fcraft: {
+                title: 'Farm to Fork',
+                category: 'Food craft',
+                prize: '₹400 (per person : ₹200)',
+                rules: [
+                    '2 players per team',
+                    'No electrical equipment is allowed & Cooking must be fireless',
+                    'Non-vegetarian and alcoholic ingredients are not allowed'
+                ],
+                facultyCoordinator: 'Dr. Ranjan Sabhaya, Dr. Swapna Nair',
+                studentCoordinator: 'Chauhan Vasvi, Mahek, Neha',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            SPainting: {
+                title: 'T-Shirt Painting',
+                category: 'T-Shirt Painting',
+                prize: '₹200 (per person)',
+                rules: [
+                    'There will be individual participation in this event',
+                    'College will provide the special decoration elements',
+                    'Participants must bring their own plain cotton T-shirt, colours,  brushes, paints and other decoration ingredients/materials'
+                ],
+                facultyCoordinator: 'Ms. Yesha Joshi',
+                studentCoordinator: 'Shubham, Trusha, Valand Krishna',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+            CCraft: {
+                title: 'Clay Craft',
+                category: 'Fillers',
+                prize: '₹200 (per person)',
+                rules: [
+                    'There will be individual participation in this event',
+                    'Clay will be provided by the college',
+                    'Participants must bring their own colours, brushes and other required materials/tools'
+                ],
+                facultyCoordinator: 'Ms. Yesha Joshi',
+                studentCoordinator: 'Shubham, Trusha, Valand Krishna',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+
+            RMaking: {
+                title: 'Reelovation',
+                category: 'Reel Making',
+                prize: '₹400 (per person : ₹200)',
+                rules: [
+                    '2 Member`s team / Individual',
+                    'Theme shall be Sustainability - based',
+                    'Duration : Reels should be between 30 to 60 seconds'
+                ],
+                facultyCoordinator: 'Dr. Hemlata Agarwal, Dr. Harshesh Patel',
+                studentCoordinator: 'Divyang, Shruti, Radhika',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+
+            OGaming: {
+                title: 'Battlefield',
+                category: 'Online Gaming',
+                prize: '₹600 (per person : ₹150)',
+                rules: [
+                    '4 players per team',
+                    'In-Game Rank: Players typically need to have achieved a certain in-game rank (e.g., Level 30 or above) to be eligible',
+                    'Map Downloads - Erangle map. Pillow, charging facilities and Wi-Fi are not provided by the institute'
+                ],
+                facultyCoordinator: 'Dr. Ashish Patil, Ms. Yesha Joshi',
+                studentCoordinator: 'Vasu, Sarthakkumar, Sahal Mohamad Arif Sajeda',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+
+            WFiller: {
+                title: 'Wall Hanging Craft ',
+                category: 'Wallfiller',
+                prize: '₹200 (per person)',
+                rules: [
+                    'There will be individual participation in this event',
+                    'Participants must create a wall hanging using waste/reusable materials',
+                    'Participants must bring their own materials and tools'
+                ],
+                facultyCoordinator: 'Ms. Yesha Joshi',
+                studentCoordinator: 'Shubham, Trusha, Valand Krishna',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            },
+
+            bouquet: {
+                title: 'Pipe Bouquet',
+                category: 'Filler',
+                prize: '₹200 (per person)',
+                rules: [
+                    'There will be individual participation in this event',
+                    'Participants must bring their own pipe cleaners and required materials/tools',
+                    'The artwork must be created on the spot'
+                ],
+                facultyCoordinator: 'Ms. Yesha Joshi',
+                studentCoordinator: 'Shubham, Trusha, Valand Krishna',
+                formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleGoogleFormId123/viewform'
+            }
+
+        };
+
+        function openEventModal(eventId) {
+            const data = eventData[eventId];
+            if (!data) return;
+
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#159A9C] bg-[#159A9C]/10 px-2.5 py-1 rounded-full border border-[#159A9C]/30">${data.category}</span>
+                <h3 class="font-orbitron font-bold text-xl text-white mt-3 mb-1">${data.title}</h3>
+                <p class="text-[#159A9C] font-bold text-sm mb-4"><i class="fa-solid fa-wallet mr-1"></i> Fee: ${data.prize}</p>
+                
+                <div class="border-t border-[#C9DDD0] pt-4 mb-6">
+                    <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-2">Rulebook Highlights:</h4>
+                    <ul class="space-y-2 text-xs text-[#5C776F]">
+                        ${data.rules.map(r => `<li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#159A9C] mt-0.5"></i> <span>${r}</span></li>`).join('')}
+                    </ul>
+                </div>
+
+                
+<div class="border-t border-[#C9DDD0] pt-4 mb-6">
+    <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-3">
+        Event Coordinators
+    </h4>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+        <div class="rounded-xl border border-[#159A9C]/25 bg-[#159A9C]/5 p-3">
+            <p class="text-[10px] uppercase tracking-wider font-bold text-[#159A9C] mb-1">
+                Faculty Coordinator
+            </p>
+            <p class="text-sm font-semibold text-slate-700">
+                ${data.facultyCoordinator || 'Not assigned'}
+            </p>
+        </div>
+
+        <div class="rounded-xl border border-[#16865C]/25 bg-[#16865C]/5 p-3">
+            <p class="text-[10px] uppercase tracking-wider font-bold text-[#16865C] mb-1">
+                Student Coordinator
+            </p>
+            <p class="text-sm font-semibold text-slate-700">
+                ${data.studentCoordinator || 'Not assigned'}
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="${data.formUrl}" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-gradient-to-r from-[#16865C] via-[#159A9C] to-[#8BCF32] text-white font-bold text-xs text-center hover:shadow-lg hover:shadow-[#159A9C]/20 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-file-signature"></i> Register via Google Form
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                    <a href="https://wa.me/916355320764?text=Hi!%20I%20have%20a%20query%20about%20${encodeURIComponent(data.title)}" target="_blank" class="w-full py-3 rounded-xl glass-card text-[#16865C] border border-[#16865C]/35 text-xs font-bold text-center hover:bg-[#16865C]/10 transition-all flex items-center justify-center gap-2" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Ask Coordinator
+                    </a>
+                </div>
+            `;
+
+            const modal = document.getElementById('event-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeEventModal() {
+            const modal = document.getElementById('event-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    </script>
+
+    <script>
+        /*
+         * HORIZON 2026 — deployment safety layer
+         * --------------------------------------
+         * This page is intentionally static so it can be hosted directly on GitHub Pages
+         * or Vercel without a server/backend.
+         *
+         * Before publishing, replace the example registration/Drive URLs and WhatsApp
+         * numbers in the HTML with your real links/numbers.
+         */
+        (function () {
+            "use strict";
+
+            // Prevent accidental navigation to obvious placeholder links.
+            const placeholderPatterns = [
+                "ExampleGoogleFormId",
+                "YOUR_GOOGLE_DRIVE_FOLDER_LINK",
+                "YOUR_GOOGLE_DRIVE_VIDEO_FOLDER_LINK",
+                "SPONSOR_IMAGE_LINK_"
+            ];
+
+            document.querySelectorAll("a[href]").forEach(function (link) {
+                const href = link.getAttribute("href") || "";
+                if (placeholderPatterns.some(function (p) { return href.indexOf(p) !== -1; })) {
+                    link.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        alert("This link is still a placeholder. Please add the real HORIZON 2026 link before publishing.");
+                    });
+                }
+            });
+
+            // Gracefully hide broken local/placeholder sponsor images rather than showing
+            // browser broken-image icons.
+            document.querySelectorAll('img[src*="SPONSOR_IMAGE_LINK_"]').forEach(function (img) {
+                img.style.display = "none";
+                const parent = img.closest("div");
+                if (parent) {
+                    parent.setAttribute("aria-hidden", "true");
+                }
+            });
+
+            // Add lazy loading to non-critical images for better first-load performance.
+            // Lazy loading & smooth reveal animation
+            document.querySelectorAll("img").forEach(function (img) {
+                // Keep above-the-fold hero images instant
+                if (img.getAttribute("loading") === "eager" || img.getAttribute("fetchpriority") === "high") {
+                    return;
+                }
+
+                // Set browser lazy loading
+                img.setAttribute("loading", "lazy");
+                img.setAttribute("decoding", "async");
+                img.classList.add("lazy-anim");
+
+                // If the image is already cached/complete, reveal immediately
+                if (img.complete) {
+                    img.classList.add("is-loaded");
+                } else {
+                    img.addEventListener("load", function () {
+                        img.classList.add("is-loaded");
+                    }, { once: true });
+                }
+            });
+
+            // Never allow a stale timer to keep the page throwing errors.
+            if (typeof updateTimer === "function") {
+                try { updateTimer(); } catch (e) { console.warn("Countdown update:", e); }
+            }
+        })();
+    </script>
+
+    <noscript>
+        <div style="padding:12px;text-align:center;background:#111827;color:#fff;">JavaScript is disabled. Some HORIZON
+            2026 interactive features such as countdowns, modals and gallery controls will not work.</div>
+    </noscript>
+</body>
+
+</html>
